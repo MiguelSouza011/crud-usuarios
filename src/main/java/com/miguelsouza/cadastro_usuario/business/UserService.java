@@ -52,4 +52,7 @@ public class UserService {
 
         repository.saveAndFlush(userUpdated);
     }
+
+    public User insert(User obj) {
+        return repository.save(obj); }
 }
